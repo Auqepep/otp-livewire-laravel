@@ -5,7 +5,7 @@ use App\Http\Controllers\Auth\VerifyEmailController;
 
 Route::view('/', 'welcome');
 
-// Custom OTP Auth Routes
+// Custom OTP Auth Routes - Using Livewire Components
 Route::view('login', 'auth.login')->name('login')->middleware('guest');
 Route::view('register', 'auth.register')->name('register')->middleware('guest');
 
