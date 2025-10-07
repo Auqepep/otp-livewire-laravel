@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\VerifyEmailController;
 
-Route::view('/', 'welcome');
+Route::redirect('/', '/login');
 
 // Custom OTP Auth Routes - Using Livewire Components
 Route::view('login', 'auth.login')->name('login')->middleware('guest');
